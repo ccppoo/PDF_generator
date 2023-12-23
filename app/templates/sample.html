@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Sample HTML Template</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./templates/sample.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./sample.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="item title">Room Rental Application</div>
+      <div class="item item1">for applicant</div>
+      <div class="item using-place">
+        <div class="place-info-row">
+          <div class="row-title">Room</div>
+          <div class="row-item">
+            <p>{{place}}</p>
+          </div>
+        </div>
+        <div class="place-info-row">
+          <div class="row-title">Date</div>
+          <div class="row-item">
+            <p>{{month}} - {{day}} - {{year}}</p>
+          </div>
+        </div>
+        <div class="place-info-row">
+          <div class="row-title">Time</div>
+          <div class="row-item">
+            <p>14:00 ~ 16:00</p>
+          </div>
+        </div>
+        <div class="place-info-row">
+          <div class="row-title">Applicant Info</div>
+          <div class="row-item-userinfo">
+            <div class="userinfo-item">
+              <p>Name : {{name}}</p>
+            </div>
+            <div class="userinfo-item">
+              <p>Department : {{user_department}}</p>
+            </div>
+            <div class="userinfo-item">
+              <p>Contact : {{phone_number}}</p>
+            </div>
+            <div class="userinfo-item">
+              <p>E-mail : {{email}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="place-info-row">
+          <div class="row-title">Objectives</div>
+          <div class="row-item-usinginfo">
+            <div class="usinginfo-item">
+              <p>usage : {{usage}}</p>
+            </div>
+            <div class="usinginfo-item">
+              <p>participants : {{participants}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="place-info-row">
+          <div class="row-title">supervision</div>
+          <div class="row-item-manageinfo">
+            <div class="manageinfo-item">
+              supervisior : {{managed_by}}
+            </div>
+            <div class="manageinfo-item">(signiture)</div>
+          </div>
+        </div>
+      </div>
+      <div class="item">I Agree following agreements</div>
+      <div class="item rules-title">Agreement</div>
+      <div class="item">
+        <div class="rule-item">
+          <ol>
+            <li>Rule 1</li>
+            <li>Rule 2</li>
+            <li>Rule 3</li>
+            <li>Rule 4</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="lastword">Center</div>
+      </div>
+    </div>
+  </body>
+</html>

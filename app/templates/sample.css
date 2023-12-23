@@ -1,0 +1,165 @@
+p {
+    margin: 0;
+}
+ol {
+margin: 0;
+}
+html, body {
+    width:  210mm;
+    max-height: 297mm;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-direction: row;
+
+}
+  .container {
+    display: grid;
+    grid-template-rows: 30px 20px 360px 30px 30px auto 60px;
+    row-gap: 8px;
+    
+  }
+
+  .item {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .rules-title {
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .item1 {
+    font-size: 15px;
+    text-align: end;
+  }
+
+  .using-place {
+    display: grid;
+    border: 2px solid black;
+    grid-template-rows: 1fr 1fr 1fr 2fr 2fr 2fr;
+  }
+
+  .using-place > .place-info-row {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 100px 1fr;
+  }
+
+  .using-place > .place-info-row > .row-title {
+    display: flex;
+    border-right: 2px solid black;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(182, 181, 181);
+  }
+
+  .using-place > .place-info-row > .row-item {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .using-place > .place-info-row > .row-item-userinfo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .using-place
+    > .place-info-row
+    > .row-item-userinfo
+    > .userinfo-item {
+    border: 1px solid black;
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .using-place > .place-info-row > .row-item-usinginfo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .using-place
+    > .place-info-row
+    > .row-item-usinginfo
+    > .usinginfo-item {
+    border-bottom: 1px solid black;
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .using-place > .place-info-row > .row-item-manageinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .using-place
+    > .place-info-row
+    > .row-item-manageinfo
+    > .manageinfo-item {
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .using-place > .place-info-row > .row-item > p {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 7px;
+  }
+
+  .bottom > .bottom-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .bottom > .bottom-item > .bottom-item-title {
+    text-align: right;
+  }
+
+  .bottom > .bottom-item > .bottom-item:nth-child(2) {
+    /* background-color: aqua; */
+    text-align: center;
+  }
+  .bottom > .bottom-item > .bottom-item:nth-child(3) {
+    /* background-color: red; */
+    text-align: left;
+  }
+
+  .lastword {
+    font-size: large;
+    text-align: center;
+  }
